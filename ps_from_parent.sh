@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# List all the PID of the processes that have a certain parent (here parent is process apache2).
+# List all the PID of the processes that have a given parent (here parent is process apache2).
 
 
 _PIDS=$(ps ax -o pid,comm | grep ' apache2' | awk '{print $1}')
